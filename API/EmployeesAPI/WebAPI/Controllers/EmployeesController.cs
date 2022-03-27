@@ -15,17 +15,17 @@ namespace WebAPI.Controllers
     [ApiController]
     public class EmployeesController : ControllerBase
     {
-        //private readonly AppDbContext _context;
-        private readonly IEmployeeRepository _employeeRepository;
+        private readonly AppDbContext _context;
+        //private readonly IEmployeeRepository _employeeRepository;
 
-        public EmployeesController(IEmployeeRepository  employeeRepository)
-        {
-            _employeeRepository = context;
-        }
-        //public EmployeesController(AppDbContext context)
+        //public EmployeesController(IEmployeeRepository  employeeRepository)
         //{
-        //    _context = context;
+        //    _employeeRepository = context;
         //}
+        public EmployeesController(AppDbContext context)
+        {
+            _context = context;
+        }
 
         // GET: api/Employees
         [HttpGet]
