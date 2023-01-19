@@ -4,3 +4,5 @@
 
 /Core.API/.vs
 /Core.API/Core.API/bin/Debug/net6.0
+/.vs
+/Core.API/Core.API/obj

@@ -1,7 +1,9 @@
-﻿namespace Core.API
+﻿using Core.API.Models;
+
+namespace Core.API
 {
     public interface IJWTTokenAuth
     {
-        string Authenticate(string username, string password);
+         Task<string> GenerateJWT(UserInfo _userData);
     }
 }
